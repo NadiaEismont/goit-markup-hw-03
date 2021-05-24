@@ -71,6 +71,7 @@ header {
 .container {
   background: #e5e5e5;
   margin: 0 auto;
+  width: 1200 px;
 }
 .hero-title {
   font-style: normal;
@@ -120,9 +121,10 @@ header {
   display: flex;
   font-family: inherit;
   cursor: pointer;
+  border-radius: 4px;
 }
 /* sections */
-.container-team {
+.team {
   background: #f5f4fa;
 }
 .container-team-member {
@@ -201,5 +203,10 @@ p {
   display: flex;
   font-family: inherit;
   cursor: pointer;
+  border-radius: 4px;
+  height: 38px;
+  width: 73px;
+  left: 495px;
+  padding: 22px 6px;
 }
 
