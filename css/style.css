@@ -1,17 +1,17 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #2196F3;
+  --accent-color: #2196f3;
   --titles-text: black;
   --contacts-color: #ffffff99;
-  --white: #ffffff; 
-  --background-color:#e5e5e5;
-  --button-color:#188ce8; 
+  --white: #ffffff;
+  --background-color: #e5e5e5;
+  --button-color: #188ce8;
   --black-accent: #2f303a;
+  --button-portfolio: #f5f4fa;
 }
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
 }
 
@@ -20,15 +20,15 @@ ul {
 }
 a {
   color: var(--title-text-color);
-}
-a {
   text-decoration: none;
 }
+
 body {
-  background-color:var--(background-color);
-  font-family: 'Roboto', sans-serif;
+  background-color: var--(background-color);
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   font-style: normal;
+  margin: 0;
 }
 
 /* navigation */
@@ -57,10 +57,13 @@ body {
   color: var(--accent-color);
 }
 .link-footer:hover,
-.link-footer{
-  color: var(--accent-color)
+.link-footer:focus {
+  color: var(--accent-color);
 }
-
+.link-header:hover,
+.link-header:focus {
+  color: var(--accent-color);
+}
 
 .nav-list .link.current {
   color: var(--primary-text-color);
@@ -70,15 +73,20 @@ header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  color: var(--titles-text); 
+  color: var(--titles-text);
 }
-.navigation{
-   width: 1200 px;
+.navigation {
+  width: 1200 px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.link-headercolor:{
-  color:var--(--contacts-color)} 
+.link-header {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+}
 /* main */
 .container {
   background: var(--background-color);
@@ -95,18 +103,18 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color:var(--white);
-  margin-top: 200px; 
-  margin-right:450px;
+  color: var(--white);
+  margin-top: 200px;
+  margin-right: 450px;
   margin-bottom: 30px;
-  margin-left: 450px; 
+  margin-left: 450px;
 }
 .hero {
   background: var(--black-accent);
 }
 
 .section-title {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
@@ -121,7 +129,7 @@ header {
   color: var(--primary-text-color);
 }
 .container-title {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -129,12 +137,13 @@ header {
 }
 /* button */
 .button {
-  color:var(--white);
+  color: var(--white);
   background-color: var(--button-color);
   font-size: 16px;
   line-height: 1.88;
   font-weight: 700;
   letter-spacing: 0.06em;
+  text-align: center;
   padding: 10px 32px;
   display: flex;
   font-family: inherit;
@@ -148,18 +157,18 @@ header {
 .container-team-member {
   font-size: 16px;
   line-height: 1.19;
-  color: var(--title-text-color)
+  color: var(--title-text-color);
   font-weight: 500;
 }
 .container-team-prof {
   font-size: 16px;
   line-height: 1.19;
-  color:var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
 /* footer */
 .container-footer {
-  background:var(--black-accent);
+  background: var(--black-accent);
   width: 1200 px;
   padding-left: 15px;
   padding-right: 15px;
@@ -171,7 +180,7 @@ header {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color:var(--white)
+  color: var(--white);
 }
 .address {
   font-style: normal;
@@ -187,14 +196,13 @@ header {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--contacts-color)
- }
-
+  color: var(--contacts-color);
+}
 
 /* Portfolio part */
 .all:hover,
 .all:focus {
-  color:var(--accent-color);
+  color: var(--accent-color);
 }
 h2 {
   font-weight: 700;
@@ -211,22 +219,22 @@ p {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.button-port{
-  color: var(--white);
-  background-color: var(--accent-color);
+.button-port {
+  color: var(--title-text-color);
+  background-color: var(--button-portfolio);
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
   padding: 10px 32px;
-  display: flex;
+  /* display: flex; */
   font-family: inherit;
   cursor: pointer;
   border-radius: 4px;
   height: 38px;
-  width: 73px;
+  min-width: 130px;
   left: 495px;
-  padding: 22px 6px;
+  padding: 6px 22px;
+  display: inline-block;
 }
-
