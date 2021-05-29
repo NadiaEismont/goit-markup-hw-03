@@ -25,7 +25,7 @@
   <body>
     <header class="navigation">
       <!-- My comment -->
-      <nav>
+      <nav class="nvgtn">
         <ul class="nav-list">
           <li>
             <a href="" class="logo"><span class="web">Web</span>Studio</a>
@@ -41,9 +41,9 @@
           </li>
         </ul>
       </nav>
-      <div class="link-header-section">
-        <ul>
-          <li>
+      <div class="section-contacts">
+        <ul class="section-contacts">
+          <li class="link-header-section">
             <a href="meilto:info@devstudio.com" class="link-header mail"
               >info@devstudio.com</a
             >
@@ -70,28 +70,28 @@
       <section>
         <div class="container">
           <ul class="section">
-            <li>
+            <li class="section-block">
               <h3 class="section-title">Внимание к деталям</h3>
               <p class="section-info">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="section-block">
               <h3 class="section-title">Пунктуальность</h3>
               <p class="section-info">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="section-block">
               <h3 class="section-title">Планирование</h3>
               <p class="section-info">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="section-block">
               <h3 class="section-title">Современные технологии</h3>
               <p class="section-info">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -104,7 +104,7 @@
       <section>
         <div class="container">
           <h2 class="container-title">Чем мы занимаемся</h2>
-          <ul>
+          <ul class="work">
             <li>
               <img src="./image/box1.jpg" alt="working" width="370" />
             </li>
@@ -118,9 +118,9 @@
         </div>
       </section>
       <section>
-        <div class="container team">
+        <div class="container">
           <h2 class="container-title">Наша команда</h2>
-          <ul>
+          <ul class="team">
             <li>
               <img src="./image/team1.jpg" alt="team member" width="270" />
               <h3 class="container-team-member">Игорь Демьяненко</h3>
@@ -146,13 +146,13 @@
       </section>
     </main>
 
-    <footer id="contacts">
-      <!--copyrihgting-->
+    <!--copyrihgting-->
+    <footer>
       <div class="container-footer">
         <a class="link logo" href="./index.html">
           <span class="web">Web</span><span class="studio">Studio</span></a
         >
-        <address>
+        <address id="contacts">
           <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
           <ul>
             <li>
