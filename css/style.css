@@ -45,7 +45,11 @@ body {
   font-style: normal;
   margin: 0;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* navigation */
 .logo {
   font-family: Raleway;
@@ -66,27 +70,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-/* hover section */
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-.link-footer:hover,
-.link-footer:focus {
-  color: var(--accent-color);
-}
-.link-header:hover,
-.link-header:focus {
-  color: var(--accent-color);
-}
-.nav-list {
-  display: flex;
-  vertical-align: middle;
-  /* justify-content: space-evenly; */
-}
-.nav-list .link.current {
-  color: var(--primary-text-color);
 }
 
 header {
@@ -112,29 +95,41 @@ header {
   line-height: 1.14px;
   letter-spacing: 0.02em;
 }
-/* .nav-items {
-  padding: 32px 331px 31px 93px;
-} */
+
 .link-header-section {
   padding-top: 32px;
   padding-bottom: 31px;
   display: flex;
+  margin-left: auto;
 }
 .link-header .mail {
   padding-top: 32px;
   padding-right: 50px;
   padding-bottom: 31;
 }
-
-/* main */
-.container {
-  background: var(--background-color);
-  margin: 0 auto;
-  width: 1200 px;
-  padding-left: 15px;
-  padding-right: 15px;
-  align-items: center;
+/* hover section */
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--accent-color);
+}
+.link-header:hover,
+.link-header:focus {
+  color: var(--accent-color);
+}
+.nav-list {
+  display: flex;
+  vertical-align: middle;
+  /* justify-content: space-evenly; */
+}
+.nav-list .link.current {
+  color: var(--primary-text-color);
+}
+/* hero */
+
 .hero-title {
   font-style: normal;
   font-weight: 900;
@@ -151,24 +146,14 @@ header {
   text-align: center;
   margin-bottom: 89px;
 }
-.section {
-  padding: 94px 0;
+/* main */
+.container {
+  background: var(--background-color);
   margin: 0 auto;
-}
-.section-title {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--title-text-color);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.section-info {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--primary-text-color);
+  width: 1200 px;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
 }
 .container-title {
   font-weight: 500;
@@ -193,8 +178,43 @@ header {
   border: transparent;
 }
 /* sections */
+
+.section {
+  width: 1200 px;
+  padding: 94px 0;
+  margin: 0 auto;
+  display: flex;
+}
+.section-block {
+  width: calc((100% - 3 * var(--main-margin)) / 4);
+}
+.section-block:not(:last-child) {
+  margin-right: 30px;
+}
+.work {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  padding-top: 47px;
+}
 .team {
+  display: flex;
   background: #f5f4fa;
+  flex-basis: calc(100% / 4);
+}
+.section-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.section-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
 }
 .container-team-member {
   font-size: 16px;
@@ -215,6 +235,16 @@ header {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.footer-part {
+  background-color: var(--bg-hero-footer);
+  padding: 60px 0;
+}
+.footer-part ul {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
 .studio {
   font-family: Raleway;
   font-style: normal;
@@ -283,18 +313,16 @@ header {
   display: inline-block;
   border: none;
 }
-.port-nav li:not(: first-child) {
+/* .port-nav li:not(: first-child) {
   margin-left: 8px;
-}
+} */
 .experience {
   width: 370px;
   height: 404px;
   left: 215px;
   top: 262px;
 }
-.image {
-  display: block;
-}
+
 .link-port {
   display: inline-block;
 }
@@ -309,12 +337,19 @@ header {
   overflow: hidden;
 }
 .item {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
-  align-items: center;
-  flex-direction: column;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-
+.item > .experience {
+  flex-basis: calc(100% / 3-30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 .nav-list-portfolio {
   display: flex;
   justify-content: space-evenly;
