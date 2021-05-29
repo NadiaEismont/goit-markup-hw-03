@@ -10,8 +10,15 @@
   --black-accent: #2f303a;
   --button-portfolio: #f5f4fa;
 }
-* {
+html {
   box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
   padding: 0;
 }
 
@@ -100,14 +107,16 @@ header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
   margin: 0px;
+  margin-bottom: 30px;
 }
 .hero {
   background: var(--black-accent);
+  text-align: center;
+  margin-bottom: 89px;
 }
 
 .section-title {
@@ -140,9 +149,8 @@ header {
   line-height: 1.88;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-align: center;
   padding: 10px 32px;
-  display: flex;
+  display: inline-block;
   font-family: inherit;
   cursor: pointer;
   border-radius: 4px;
@@ -197,9 +205,10 @@ header {
 }
 
 /* Portfolio part */
-.all:hover,
-.all:focus {
-  color: var(--accent-color);
+.button-port:hover,
+.button-port:focus {
+  background-color: var(--accent-color);
+  color: var(--white);
 }
 .experience > h2 {
   font-weight: 700;
@@ -245,4 +254,10 @@ header {
   height: 404px;
   left: 215px;
   top: 262px;
+}
+.image {
+  display: block;
+}
+.link-port {
+  display: inline-block;
 }
