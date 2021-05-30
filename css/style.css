@@ -269,6 +269,11 @@ header {
 .team {
   display: flex;
 }
+.team-description {
+  text-align: center;
+  /* align-items: center; */
+  align-self: auto;
+}
 .team > .team-description {
   width: calc((100% - 90px) / 4);
   height: 368px;
@@ -284,6 +289,10 @@ header {
   margin-top: 50px;
   align-items: center;
 }
+/* .container-team-member,
+.container-team-prof {
+  align-self: auto;
+} */
 
 .section-title {
   font-weight: 500;
@@ -361,8 +370,7 @@ header {
   background-color: var(--accent-color);
   color: var(--white);
 }
-.nav-header {
-}
+
 .nav-portfolio {
   width: 1230px;
   display: flex;
