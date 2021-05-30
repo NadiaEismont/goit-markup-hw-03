@@ -51,6 +51,11 @@ img {
   height: auto;
 }
 /* navigation */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -80,7 +85,40 @@ header {
   color: var(--titles-text);
   border: 1px solid #ececec;
 }
+.nav-list {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
 
+.nav-list > .nav-list-header:not(:last-child) {
+  margin-right: 50px;
+}
+/* .section-contact {
+  display: inline-block;
+} */
+.section-contacts {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.section-contacts > .link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.nav-list .link.current {
+  color: var(--primary-text-color);
+}
 .link-header {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -113,14 +151,7 @@ header {
 .link-header:focus {
   color: var(--accent-color);
 }
-.nav-list {
-  display: flex;
-  vertical-align: middle;
-  /* justify-content: space-evenly; */
-}
-.nav-list .link.current {
-  color: var(--primary-text-color);
-}
+
 /* hero */
 
 .hero-title {
@@ -193,7 +224,20 @@ header {
   display: flex;
   background: #f5f4fa;
   flex-basis: calc(100% / 4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-left: -30px;
+  margin-top: -50px;
 }
+
+.team > .team-description {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
 .section-title {
   font-weight: 500;
   font-size: 14px;
@@ -270,6 +314,20 @@ header {
   background-color: var(--accent-color);
   color: var(--white);
 }
+.nav-header {
+}
+.nav-portfolio {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav-list-portfolio {
+  display: inline-block;
+  justify-content: space-evenly;
+}
+
 .experience > h2 {
   font-weight: 700;
   font-size: 18px;
@@ -314,6 +372,7 @@ header {
   height: 404px;
   left: 215px;
   top: 262px;
+  border: 1px solid #eeeeee;
 }
 
 .link-port {
@@ -342,9 +401,4 @@ header {
   flex-basis: calc(100% / 3-30px);
   margin-left: 30px;
   margin-top: 30px;
-}
-.nav-list-portfolio {
-  display: flex;
-  justify-content: space-evenly;
-  orientation-horizontal: middle;
 }
