@@ -61,6 +61,15 @@ header {
   line-height: 1.14;
   color: var(--titles-text);
   border: 1px solid #ececec;
+  width: 1600px;
+  margin: 0 auto;
+}
+footer {
+  background: var(--black-accent);
+  width: 1600px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* logo */
@@ -329,16 +338,6 @@ header {
 }
 
 /* footer */
-.container-footer {
-  background: var(--black-accent);
-  width: 1600px;
-  margin: 0 auto;
-  padding-left: 215px;
-  padding-right: 215px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .footer-part {
   background-color: var(--bg-hero-footer);
   padding: 60px 0;
