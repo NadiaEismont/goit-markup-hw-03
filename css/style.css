@@ -5,7 +5,7 @@
   --titles-text: black;
   --contacts-color: #ffffff99;
   --white: #ffffff;
-  --background-color: #e5e5e5;
+  --background-color: #ffffff;
   --button-color: #188ce8;
   --black-accent: #2f303a;
   --button-portfolio: #f5f4fa;
@@ -174,11 +174,13 @@ header {
   text-align: center;
 }
 .hero {
+  margin: 0 auto;
   background: var(--black-accent);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   align-items: center;
+  width: 1200px;
 }
 /* main */
 .container {
