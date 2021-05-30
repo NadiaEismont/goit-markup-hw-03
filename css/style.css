@@ -331,9 +331,12 @@ header {
 /* footer */
 .container-footer {
   background: var(--black-accent);
-  width: 1200 px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1600px;
+  margin: 0 auto;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-part {
