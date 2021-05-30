@@ -174,7 +174,7 @@ header {
   text-align: center;
 }
 .hero {
-  margin: 0 auto;
+  margin: 0 auto 89px auto;
   background: var(--black-accent);
   text-align: center;
   padding-top: 200px;
@@ -237,10 +237,13 @@ header {
 }
 
 /* section */
-
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
 .profile {
   width: 1230 px;
-  padding: 94px 0;
+  /* padding: 94px 0; */
   margin: 0 auto;
   display: flex;
 }
