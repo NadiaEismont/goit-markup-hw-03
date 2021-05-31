@@ -364,7 +364,7 @@ footer {
   letter-spacing: 0.03em;
   color: var(--white);
 }
-.container-footer a {
+.link-footer {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
